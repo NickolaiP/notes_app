@@ -8,6 +8,7 @@ import (
 	"os/signal"
 	"time"
 
+	"noteApi/cmd/speller"
 	"noteApi/internal/config"
 	"noteApi/internal/database"
 	"noteApi/internal/hand"
@@ -48,7 +49,7 @@ func main() {
 	r.HandleFunc("/register", userHandler.Register).Methods("POST")
 	r.HandleFunc("/login", userHandler.Login).Methods("POST")
 	r.HandleFunc("/notes", hand.AuthMiddleware(noteHandler.GetNotes)).Methods("GET")
-	r.HandleFunc("/notes", hand.AuthMiddleware(noteHandler.CreateNote)).Methods("POST")
+	r.HandleFunc("/notes", hand.AuthMiddleware(speller.CreateNoteHandler(db))).Methods("POST")
 	r.HandleFunc("/notes", hand.AuthMiddleware(noteHandler.DeleteNote)).Methods("DELETE")
 
 	// Создание сервера
