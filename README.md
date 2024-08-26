@@ -3,7 +3,7 @@
 
 1. Для регистрации необходимо выполнить следующий запрос:
 ```
-curl -X POST http://localhost:8000/login -d "username=имя_пользователя&password=пароль" -i
+curl -X POST http://localhost:8000/register -d "username=имя_пользователя&password=пароль" -i
 ```
 
 2. Для авторизации необходимо выполнить следующий запрос:
