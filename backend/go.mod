@@ -1,4 +1,4 @@
-module github.com/NickolaiP/notes_app
+module github.com/NickolaiP/notes_app/backend
 
 go 1.22
 
