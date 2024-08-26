@@ -7,9 +7,10 @@ import (
 	"io"
 	"net/http"
 	"net/url"
-	"noteApi/internal/database"
 	"strings"
 	"time"
+
+	"github.com/NickolaiP/notes_app/backend/internal/database"
 )
 
 // CreateNoteHandler возвращает обработчик HTTP-запросов для создания заметки

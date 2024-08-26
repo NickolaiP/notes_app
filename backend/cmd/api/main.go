@@ -7,11 +7,11 @@ import (
 	"os/signal"
 	"time"
 
-	"noteApi/cmd/speller"
-	"noteApi/internal/config"
-	"noteApi/internal/database"
-	"noteApi/internal/hand"
-	"noteApi/internal/logger"
+	"github.com/NickolaiP/notes_app/backend/cmd/speller"
+	"github.com/NickolaiP/notes_app/backend/internal/config"
+	"github.com/NickolaiP/notes_app/backend/internal/database"
+	"github.com/NickolaiP/notes_app/backend/internal/hand"
+	"github.com/NickolaiP/notes_app/backend/internal/logger"
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"

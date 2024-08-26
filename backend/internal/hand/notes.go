@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"noteApi/internal/database"
-	"noteApi/internal/logger"
-	"noteApi/internal/models"
+	"github.com/NickolaiP/notes_app/backend/internal/database"
+	"github.com/NickolaiP/notes_app/backend/internal/logger"
+	"github.com/NickolaiP/notes_app/backend/internal/models"
 )
 
 // NoteHandler обрабатывает запросы, связанные с заметками (создание, получение и удаление).

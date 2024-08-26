@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"noteApi/internal/database"
-	"noteApi/internal/logger"
+	"github.com/NickolaiP/notes_app/backend/internal/database"
+	"github.com/NickolaiP/notes_app/backend/internal/logger"
 
 	"github.com/golang-jwt/jwt/v5"
 	"golang.org/x/crypto/bcrypt"

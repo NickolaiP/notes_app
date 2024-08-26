@@ -1,4 +1,4 @@
-module noteApi
+module github.com/NickolaiP/notes_app
 
 go 1.22
 

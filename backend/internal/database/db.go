@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"noteApi/internal/config"
+	"github.com/NickolaiP/notes_app/backend/internal/config"
 
 	_ "github.com/lib/pq"
 )
